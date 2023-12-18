@@ -75,7 +75,7 @@ fetchCountryData();
 async function weatherUpdate(country, index) {
     try {
         const a = country.split(",");
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${a[0]}&appid=79c94d99a194db9bb8350eb22c715e3f`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${a[0]}&appid=i cannot provide my key... so use your api key.. thank you`);
         const data = await response.json();
         let weatherInfo = `Weather is ${data.weather[0].main} and temperature is ${data.main.temp}`;
         return document.getElementById(`weatherApp_${index}`).innerHTML = `<b>${weatherInfo}</b>`
